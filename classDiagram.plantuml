@@ -1,0 +1,19 @@
+@startuml classDiagram
+package Teacher {
+    Teacher --> Gradebook
+}
+
+package  Gradebook {
+
+    class Grade {
+        + double grade(string data)
+        + double GPA(string data)
+    }
+
+    class name {
+        + string name
+    }
+
+}
+
+@enduml

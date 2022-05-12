@@ -1,0 +1,11 @@
+@startuml UseCase
+actor Teacher
+
+package Gradebook as "Gradebook" {
+    usecase Grade
+    usecase GPA
+}
+
+Teacher --> Gradebook
+Gradebook <-- Student
+@enduml
